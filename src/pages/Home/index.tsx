@@ -7,7 +7,6 @@ import { styles } from './styles';
 
 const Home: FC = (): JSX.Element => {
   const navigate = useNavigate();
-  const navigateToCreate = () => navigate('/create');
 
   return (
     <Grid container sx={styles.landing}>
@@ -15,11 +14,11 @@ const Home: FC = (): JSX.Element => {
         <Grid item xs={12} md={6} mb={4}>
           <Typography variant="h3" sx={styles.heading}>
             <Typography component="span" variant="h2" sx={styles.mainText}>
-              Artsy:{' '}
+              Blomogi:{' '}
             </Typography>
-            AI generated art from simple voice prompts
+            Auto generated Emogi in Blog Post
           </Typography>
-          <Button variant="contained" sx={styles.btn} onClick={navigateToCreate}>
+          <Button variant="contained" sx={styles.btn} onClick={() => navigate('/create')}>
             Create
           </Button>
         </Grid>
