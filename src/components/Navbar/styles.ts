@@ -14,6 +14,10 @@ export const styles = {
     },
   },
 
+  text: { display: { xs: 'none', md: 'block', lg: 'block' } },
+  icon: { display: 'block', zIndex: 1, height: '45px' },
+  grid: { display: 'flex', justifyContent: 'flex-end' },
+
   logo: {
     display: 'flex',
     alignItems: 'center',

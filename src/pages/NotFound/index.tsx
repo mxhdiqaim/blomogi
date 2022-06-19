@@ -1,9 +1,9 @@
 import { Box } from '@mui/material';
-import React from 'react';
+import { FC } from 'react';
 import { Missing } from '../../assets/svgs/Missing';
 import { styles } from './styles';
 
-const NotFound = () => {
+const NotFound: FC = (): JSX.Element => {
   return (
     <Box sx={styles}>
       <Missing />

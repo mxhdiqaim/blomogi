@@ -1,46 +1,30 @@
 import { Link, Typography } from '@mui/material';
+import { FC } from 'react';
+import { styles } from './styles';
 
-const Footer = () => {
+const Footer: FC = (): JSX.Element => {
   return (
-    <Typography
-      variant="caption"
-      sx={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-      }}
-    >
+    <Typography variant="caption" sx={styles.text}>
       Powered by
-      <Link
-        mx={1}
-        sx={{ cursor: 'pointer' }}
-        href="https://deepgram.com/product/overview/"
-        target="_blank"
-        underline="hover"
-        rel="noreferrer"
-      >
-        Deepgram
-      </Link>
-      ,
-      <Link
-        mx={1}
-        sx={{ cursor: 'pointer' }}
-        href="https://hotpot.ai/art-maker"
-        target="_blank"
-        underline="hover"
-        rel="noreferrer"
-      >
-        Hotpot AI
+      <Link mx={1} sx={styles.cursor} href="https://linode.com" target="_blank" underline="hover" rel="noreferrer">
+        Linode
       </Link>
       &
+      <Link mx={1} sx={styles.cursor} href="#" target="_blank" underline="hover" rel="noreferrer">
+        DeepMogi.
+      </Link>
+      Created By{' '}
       <Link
         mx={1}
-        sx={{ cursor: 'pointer' }}
-        href="https://replicate.com/pixray/text2image"
+        sx={styles.cursor}
+        href="https://github.com/mxhdiqaim"
         target="_blank"
         underline="hover"
         rel="noreferrer"
       >
+        Mahdi.
+      </Link>
+      <Link mx={1} sx={styles.cursor} href="#" target="_blank" underline="hover" rel="noreferrer">
         Pixray
       </Link>
     </Typography>

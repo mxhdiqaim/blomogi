@@ -1,10 +1,11 @@
+import { FC } from 'react';
 import { Button, Grid, Typography } from '@mui/material';
 import { Paint } from '../../assets/svgs/Paint/Paint';
 import { useNavigate } from 'react-router-dom';
 
 import { styles } from './styles';
 
-const Home = () => {
+const Home: FC = (): JSX.Element => {
   const navigate = useNavigate();
   const navigateToCreate = () => navigate('/create');
 
